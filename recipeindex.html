@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $(".clickable-row").click(function() {
+                    window.location = $(this).data("url");
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+        <table id="myTable">
+            <tr class="header">
+                <th style="width:60%;">Name</th>
+            </tr>
+            <tr class='clickable-row' data-url='kartoffel-auflauf.html'>
+                <td>Kartoffel-Auflauf</td>
+            </tr>
+            <tr class='clickable-row' data-url='index.html'>
+                <td>Berglunds snabbkop</td>
+            </tr>
+            <tr class='clickable-row' data-url='index.html'>
+                <td>Island Trading</td>
+            </tr>
+            <tr class='clickable-row' data-url='index.html'>
+                <td>Koniglich Essen</td>
+            </tr>
+        </table>
+        <script>
+            jQuery(document).ready(function($) {
+                $(".clickable-row").click(function() {
+                    window.location = $(this).data(url);
+                });
+            });
+            function myFunction() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+
+        </script>
+
+    </body>
+</html>
