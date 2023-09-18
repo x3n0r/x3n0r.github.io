@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recipe.css">
+    </head>
+    <body>
+        <div itemtype="http://schema.org/Recipe">
+
+            <h1 itemprop="name">[name]</h1>
+            <div><span>By </span><span itemprop="author">x3n0r</span></div>   
+            <img src="[imageUrl]" itemprop="image"></img>
+            <p>
+            <div>
+                <span>Category: </span>
+                <span itemprop="recipeCategory">[Hauptgericht]</span>
+            </div>
+            
+            <div>
+                <span>Serves: </span>
+                <span itemprop="yield">[5 Personen]</span>
+            </div>
+
+            <div>
+                <span>Preperation time: </span>
+                <span itemprop="prepTime">[20 Minuten]</span>
+            </div>
+
+            <div>
+                <span>Cooking time: </span>
+                <span itemprop="performTime">[20 Minuten]</span>
+            </div>
+                        
+            </p>
+
+            <div>
+                <h3>Zutaten:</h3>
+                <div>
+                    <ul>
+                        <li itemprop="ingredients">[Zutat]</li>
+                    </ul>
+                </div>
+            </div>                
+
+            <div>
+                <h3>Anleitung:</h3>
+                <div>
+                    <ul style="list-style-type: decimal;">
+                        <li>[Was Tun]</li>
+                    </ul>
+                </div>
+            </div>      
+            
+        </div>
+        <script async="async" src="//platform.getbring.com/widgets/import.js"></script>
+        <div data-bring-import style="display:none">
+            <a href="https://www.getbring.com">Bring! Einkaufsliste App f&uuml;r iPhone und Android</a>
+        </div>
+        <div data-bring-import style="display:none">
+            <a href="../recipeindex.html">Zurück zur Auswahl</a>
+        </div>
+    </body>
+</html>
+
