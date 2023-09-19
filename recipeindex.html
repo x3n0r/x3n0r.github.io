@@ -7,14 +7,7 @@
             jQuery(document).ready(function($) {
                 $(".clickable-row").click(function() {
                     testVariable = $(this).data("url")
-                    url='';
-                    console.log(testVariable)
-
-                    if ( testVariable === 'test' ) {
-                        url = 'recipes/test.html';
-                    } else {
-                        url = 'recipes/recipe.html?client=' + testVariable;
-                    }
+                    url='recipes/'+testVariable + '.html';
                     console.log(url)
                     window.location = url;
                 });
