@@ -92,5 +92,74 @@
       "gekocht",
       "Fleisch"
     ],
-    "enableQuantityChange": true
+    "enableQuantityChange": true,
+    "items": [
+        {
+          "itemId": "Kartoffel(n)",
+          "spec": "1 m.-große, in Scheiben geschnitten",
+          "altIcon": "Kartoffeln",
+          "altSection": "Früchte & Gemüse",
+          "stock": false
+        },
+        {
+          "itemId": "Zwiebel(n)",
+          "spec": "1 große, in Scheiben geschnitten",
+          "altIcon": "Zwiebeln",
+          "altSection": "Früchte & Gemüse",
+          "stock": false
+        },
+        {
+          "itemId": "Knoblauchzehe(n)",
+          "spec": "8, in Scheiben geschnitten",
+          "altIcon": "Knoblauch",
+          "altSection": "Früchte & Gemüse",
+          "stock": false
+        },
+        {
+          "itemId": "Fleischbrühe",
+          "spec": "500ml",
+          "altIcon": "Bouillon",
+          "altSection": "Zutaten & Gewürze",
+          "stock": false
+        },
+        {
+          "itemId": "Rahm",
+          "spec": "250ml",
+          "stock": false
+        },
+        {
+          "itemId": "Butter",
+          "spec": "60g",
+          "stock": false
+        },
+        {
+          "itemId": "Olivenöl",
+          "spec": "2 EL",
+          "stock": false
+        },
+        {
+          "itemId": "Schnittlauch",
+          "spec": "1 TL, gehackt",
+          "stock": false
+        },
+        {
+          "itemId": "Toastbrot",
+          "spec": "2 Scheibe/n",
+          "altIcon": "Toast",
+          "altSection": "Brot & Gebäck",
+          "stock": false
+        },
+        {
+          "itemId": "Salz und Pfeffer",
+          "altIcon": "Salz",
+          "stock": true
+        },
+        {
+          "itemId": "Wermut",
+          "spec": "(Noilly Prat)",
+          "altIcon": "Vodka",
+          "altSection": "Getränke & Tabak",
+          "stock": false
+        }
+      ]
   }
