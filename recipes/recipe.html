@@ -40,10 +40,16 @@
                     var origin   = window.location.origin;   // Returns base URL (https://example.com)
                     //"https://api.getbring.com/rest/bringrecipes/deeplink?url={the url of your recipe}&source=web&baseQuantity=4&requestedQuantity=4"
                     var bring_data='';
+                    var bring_url='';
                     bring_data+='https://api.getbring.com/rest/bringrecipes/deeplink?url=';
-                    bring_data+=origin+'/recipes/'+tryout;
+                    bring_url+=origin+'/recipes/'+tryout;
+                    bring_data+=bring_url;
                     bring_data+='&source=web&baseQuantity=4&requestedQuantity=4';
                     $('#bring').attr("href",bring_data);
+
+
+                    $('#bring2').attr("data-bring-import",bring_url);
+                    
                 });
             });
         </script>
@@ -92,13 +98,23 @@
             
         </div>
         <script async="async" src="//platform.getbring.com/widgets/import.js"></script>
+
+        normal
         <div data-bring-import style="display:none">
             <a href="https://www.getbring.com">Bring! Einkaufsliste App f&uuml;r iPhone und Android</a>
         </div>
         <div class="spacer"></div>
 
+        bring
         <div data-bring-import data-bring-import-version="2.6.2" style="display:none"></div>
             <a id="bring" href=""></a>
+        </div>
+
+        <div class="spacer"></div>
+
+        bring2
+        <div id="bring2" data-bring-import="https://x3n0r.github.io/recipes/kartoffel-auflauf.json" data-bring-import-version="2.6.2" style="display:none">
+            <a href="https://www.getbring.com">Bring! Einkaufsliste App f&uuml;r iPhone und Android</a>
         </div>
 
         <div class="spacer"></div>
