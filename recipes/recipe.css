@@ -36,6 +36,13 @@
   width: 200px;
 }
 
+#bringImg {
+  /*box-sizing: border-box; */
+  height: 34px; 
+  width: 26px; 
+  /*margin: 0px 10px 0px 12px;*/
+}
+
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
   .left, .main, .right {
