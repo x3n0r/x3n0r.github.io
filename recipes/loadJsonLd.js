@@ -18,7 +18,6 @@ $(document).ready(function(){
     $('#ingredients').append(ingredients_data)
 
     var howto_data='';
-    alert(typeof(jsonld.recipeInstructions))
     if ( typeof(jsonld.recipeInstructions) === 'string' ) {
         howto_data +='<li>'+jsonld.recipeInstructions+'</li>';
     } else {
