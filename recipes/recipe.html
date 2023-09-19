@@ -11,6 +11,17 @@
             $(document).ready(function(){
                 tryout=getParameterByName('client') + '.json'
                 $.getJSON(tryout,function(RESPONSE){
+                    var pathname = window.location.pathname; // Returns path only (/path/example.html)
+                    var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
+                    var origin   = window.location.origin;   // Returns base URL (https://example.com)
+                    var originUrl = 'https://x3n0r.github.io/';
+                    //"https://api.getbring.com/rest/bringrecipes/deeplink?url={the url of your recipe}&source=web&baseQuantity=4&requestedQuantity=4"
+                    var bring_data='';
+                    bring_data+='https://api.getbring.com/rest/bringrecipes/deeplink?url=';
+                    bring_data+=origin+'/recipes/'+ tryout;
+                    bring_data+='&source=web&v=2.6.2&baseQuantity=4&requestedQuantity=4';
+                    $('#bring').attr("href",bring_data);
+
                     $('#name').text(RESPONSE.name);
                     $('#author').text(RESPONSE.author);
                     if (RESPONSE.imageUrl === '') {
@@ -35,16 +46,6 @@
                     });
                     $('#howto').append(howto_data)
 
-                    var pathname = window.location.pathname; // Returns path only (/path/example.html)
-                    var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
-                    var origin   = window.location.origin;   // Returns base URL (https://example.com)
-                    var originUrl = 'https://x3n0r.github.io/';
-                    //"https://api.getbring.com/rest/bringrecipes/deeplink?url={the url of your recipe}&source=web&baseQuantity=4&requestedQuantity=4"
-                    var bring_data='';
-                    bring_data+='https://api.getbring.com/rest/bringrecipes/deeplink?url=';
-                    bring_data+=origin+'/recipes/'+ tryout;
-                    bring_data+='&source=web&v=2.6.2&baseQuantity=4&requestedQuantity=4';
-                    $('#bring').attr("href",bring_data);
                 });
             });
         </script>
