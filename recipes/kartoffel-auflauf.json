@@ -1,0 +1,26 @@
+{
+    "name":"Kartoffelauflauf",
+    "author":"x3n0r",
+    "imageUrl":"",
+    "category":"Hauptgericht",
+    "serves":5,
+    "preptime":20,
+    "cooktime":20,
+    "ingredients": [
+        "500g Faschiertes",
+        "1 Sauerrahm",
+        "1 Crème fraîche",
+        "2 Eier",
+        "2 kleine Zwiebeln",
+        "1kg Kartoffeln"
+    ],
+    "howto":[
+        "Kartoffeln schälen, in Spalten schneiden und ca. 15 Minuten kochen.",
+        "Zwiebeln schneiden und anbraten.",
+        "Faschiertes zu den Zwiebeln hinzugeben und mit Salz, Pfeffer und ausreichend Ketchup würzen.",
+        "Backrohr auf Umluft 180° vorheizen.",
+        "Saurrahm mit 2 Eiern vermischen. Salz und Pfeffer hinzugeben.",
+        "Kartoffeln, Faschiertes und Sauerrahm-Ei-Gemisch in einer Auflaufform schichten Crème fraîche darüber verteilen und mit geriebenen Käse bestreuen.",
+        "Auflaufform für 15-20 Minuten ins Backrohr geben."
+    ]
+}

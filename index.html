@@ -1,11 +1,26 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $(".clickable-row").click(function() {
+                    window.location = $(this).data("url");                  
+                });
+            });
+        </script>
     </head>
     <body>
         Hello World<br /><br />
-        <a href="https://x3n0r.github.io/UniversalPaperclipsTweak">Universal Paperclips Tweaked</a><br />
-        <a href="recipeindex.html">Recipes</a><br />
+        <table id="myTable">
+            <tr class='clickable-row' data-url='https://x3n0r.github.io/UniversalPaperclipsTweak'>
+                <td>Universal Paperclips Tweaked</td>
+            </tr>
+            <tr class='clickable-row' data-url='recipeindex.html'>
+                <td>Recipes</td>
+            </tr>
+        </table>
     </body>
 </html>
 

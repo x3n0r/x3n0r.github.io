@@ -5,32 +5,50 @@
         <script>
             jQuery(document).ready(function($) {
                 $(".clickable-row").click(function() {
-                    window.location = $(this).data("url");
+                    test = 'recipes/recipe.html?client=' + $(this).data("url");
+                    window.location = test;
                 });
             });
         </script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-
         <table id="myTable">
             <tr class="header">
-                <th style="width:60%;">Name</th>
+                <th><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipes.."></th>
             </tr>
-            <tr class='clickable-row' data-url='recipes/kartoffel-auflauf.html'>
-                <td>Kartoffel-Auflauf</td>
+            <tr class='clickable-row' data-url='kartoffel-auflauf'>
+                <td>Kartoffelauflauf</td>
             </tr>
-            <tr class='clickable-row' data-url='index.html'>
-                <td>Berglunds snabbkop</td>
+            <tr class='clickable-row' data-url='curry'>
+                <td>Chicken Curry</td>
+            </tr>
+            <tr class='clickable-row' data-url='cabonara'>
+                <td>Spaghetti Cabonara</td>
+            </tr>
+            <tr class='clickable-row' data-url='palatschinken'>
+                <td>Palatschinken</td>
+            </tr>
+            <tr class='clickable-row' data-url='bolognese'>
+                <td>Spaghetti Bolognese</td>
+            </tr>
+            <tr class='clickable-row' data-url='knoblauchcremesuppe'>
+                <td>Knoblauchcremesuppe</td>
+            </tr>
+            <tr class='clickable-row' data-url='paprikahuhn'>
+                <td>Paprikahuhn</td>
+            </tr>
+            <tr class='clickable-row' data-url='gschnetzeltes'>
+                <td>Gschnetzeltes</td>
+            </tr>
+            <tr class='clickable-row' data-url='pusztaschnitzel'>
+                <td>Pusztaschnitzel mit Bratkartoffeln</td>
+            </tr>
+            <tr class='clickable-row' data-url='template'>
+                <td>test</td>
             </tr>
         </table>
         <script>
-            jQuery(document).ready(function($) {
-                $(".clickable-row").click(function() {
-                    window.location = $(this).data(url);
-                });
-            });
             function myFunction() {
               // Declare variables
               var input, filter, table, tr, td, i, txtValue;

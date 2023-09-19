@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recipe.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            function getParameterByName(name) {
+                const match = RegExp(`[?&]${name}=([^&]*)`).exec(window.location.search);
+                return match && decodeURIComponent(match[1].replace(/\+/g, ' ') );
+            }
+            $(document).ready(function(){
+                tryout=getParameterByName('client') + '.json'
+                $.getJSON(tryout,function(RESPONSE){
+                    $('#name').text(RESPONSE.name);
+                    $('#author').text(RESPONSE.author);
+                    if (RESPONSE.imageUrl === '') {
+                        $("#imageUrl").hide();
+                    } else {
+                        $("#imageUrl").attr("src",RESPONSE.imageUrl);
+                    }
+                    $('#category').text(RESPONSE.category);
+                    $('#serves').text(RESPONSE.serves);
+                    $('#preptime').text(RESPONSE.preptime);
+                    $('#cooktime').text(RESPONSE.cooktime);
+
+                    var ingredients_data='';
+                    $.each(RESPONSE.ingredients,function(key,value){
+                        ingredients_data +='<li itemprop="ingredients">'+value+'</li>';
+                    });
+                    $('#ingredients').append(ingredients_data)
+
+                    var howto_data='';
+                    $.each(RESPONSE.howto,function(key,value){
+                        howto_data +='<li>'+value+'</li>';
+                    });
+                    $('#howto').append(howto_data)
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div itemtype="http://schema.org/Recipe">
+            <h1 id="name" itemprop="name">[name]</h1>
+            <div><span>By </span><span id="author" itemprop="author">[author]</span></div>   
+            <img id="imageUrl" itemprop="image"></img>
+            <p>
+            <div>
+                <span>Category: </span>
+                <span id="category" itemprop="recipeCategory">[category]</span>
+            </div>
+            
+            <div>
+                <span>Serves: </span>
+                <span id="serves" itemprop="yield">[serves]</span><span> Personen</span>
+            </div>
+
+            <div>
+                <span>Preperation time: </span>
+                <span id="preptime" itemprop="prepTime">[preptime]</span><span> Minuten</span>
+            </div>
+
+            <div>
+                <span>Cooking time: </span>
+                <span id="cooktime" itemprop="performTime">[cooktime]</span><span> Minuten</span>
+            </div>
+                        
+            </p>
+
+            <div>
+                <h3>Zutaten:</h3>
+                <div>
+                    <ul id="ingredients"></ul>
+                </div>
+            </div>                
+
+            <div>
+                <h3>Anleitung:</h3>
+                <div>
+                    <ul id="howto" style="list-style-type: decimal;"></ul>
+                </div>
+            </div>      
+            
+        </div>
+        <script async="async" src="//platform.getbring.com/widgets/import.js"></script>
+        <div data-bring-import style="display:none">
+            <a href="https://www.getbring.com">Bring! Einkaufsliste App f&uuml;r iPhone und Android</a>
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <a class="button-dark" href="../recipeindex.html">Zurück zur Auswahl</a>
+        </div>
+    </body>
+
+</html>
+

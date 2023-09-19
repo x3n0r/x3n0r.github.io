@@ -1,12 +1,13 @@
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
+    background-image: url('searchicon.png'); /* Add a search icon to input */
+    background-size: 5%;
+    background-position: 1% 50%; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
     width: 100%; /* Full-width */
     font-size: 16px; /* Increase font-size */
     padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    border: 1px solid #746f6f; /* Add a grey border */
+    /*margin-bottom: 12px; /* Add some space below the input */
   }
   
   #myTable {
@@ -14,13 +15,21 @@
     width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
+    position: relative;
   }
   
-  #myTable th, #myTable td {
+  #myTable td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
   }
   
+  #myTable th {
+    position: sticky;
+    text-align: left; /* Left-align text */
+    padding: 10px; /* Add padding */
+    top: 1%;
+  }
+
   #myTable tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd;
