@@ -6,8 +6,20 @@
         <script>
             jQuery(document).ready(function($) {
                 $(".clickable-row").click(function() {
-                    test = 'recipes/recipe.html?client=' + $(this).data("url");
-                    window.location = test;
+                    testVariable = $(this).data("url")
+                    url='';
+                    console.log(testVariable)
+
+                    if ( testVariable === 'test' ) {
+                        alert("in if")
+                        url = 'recipes/test.html';
+                    } else {
+                        alert("still in else")
+                        url = 'recipes/recipe.html?client=' + testVariable;
+                    }
+                    console.log(url)
+                    window.location = url;
+                    alert("")
                 });
             });
         </script>
@@ -45,7 +57,7 @@
             <tr class='clickable-row' data-url='pusztaschnitzel'>
                 <td>Pusztaschnitzel mit Bratkartoffeln</td>
             </tr>
-            <tr class='clickable-row' data-url='template'>
+            <tr class='clickable-row' data-url='test'>
                 <td>test</td>
             </tr>
         </table>
