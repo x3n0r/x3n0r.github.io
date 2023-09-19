@@ -34,6 +34,16 @@
                         howto_data +='<li>'+value+'</li>';
                     });
                     $('#howto').append(howto_data)
+
+                    var pathname = window.location.pathname; // Returns path only (/path/example.html)
+                    var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
+                    var origin   = window.location.origin;   // Returns base URL (https://example.com)
+                    //"https://api.getbring.com/rest/bringrecipes/deeplink?url={the url of your recipe}&source=web&baseQuantity=4&requestedQuantity=4"
+                    var bring_data='';
+                    bring_data+='https://api.getbring.com/rest/bringrecipes/deeplink?url=';
+                    bring_data+=origin+'/recipes/'+tryout;
+                    bring_data+='&source=web&baseQuantity=4&requestedQuantity=4';
+                    $('#bring').attr("href",bring_data);
                 });
             });
         </script>
@@ -85,6 +95,10 @@
         <div data-bring-import style="display:none">
             <a href="https://www.getbring.com">Bring! Einkaufsliste App f&uuml;r iPhone und Android</a>
         </div>
+        <div class="spacer"></div>
+
+        <a id="bring" class="button-dark" href="">Test</a>
+
         <div class="spacer"></div>
         <div>
             <a class="button-dark" href="../recipeindex.html">Zurück zur Auswahl</a>
