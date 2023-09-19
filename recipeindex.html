@@ -11,15 +11,12 @@
                     console.log(testVariable)
 
                     if ( testVariable === 'test' ) {
-                        alert("in if")
                         url = 'recipes/test.html';
                     } else {
-                        alert("still in else")
                         url = 'recipes/recipe.html?client=' + testVariable;
                     }
                     console.log(url)
                     window.location = url;
-                    alert("")
                 });
             });
         </script>

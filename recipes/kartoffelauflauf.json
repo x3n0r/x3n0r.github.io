@@ -1,165 +1,26 @@
 {
-    "name": "Knoblauchcremesuppe",
-    "author": "Chefkoch",
-    "tagline": "Gesamtzeit ca. 25 Minuten",
-    "linkOutUrl": "https://www.chefkoch.de/rezepte/695531172069581/Knoblauchcremesuppe.html",
-    "imageUrl": "https://img.chefkoch-cdn.de/rezepte/695531172069581/bilder/1308821/crop-960x720/knoblauchcremesuppe.jpg",
-    "imageWidth": 960,
-    "imageHeight": 720,
-    "yield": "4",
-    "baseQuantity": 4,
-    "time": "PT25M",
-    "ingredients": [
-      {
-        "itemId": "Kartoffel(n)",
-        "spec": "1 m.-große, in Scheiben geschnitten",
-        "altIcon": "Kartoffeln",
-        "altSection": "Früchte & Gemüse",
-        "stock": false
-      },
-      {
-        "itemId": "Zwiebel(n)",
-        "spec": "1 große, in Scheiben geschnitten",
-        "altIcon": "Zwiebeln",
-        "altSection": "Früchte & Gemüse",
-        "stock": false
-      },
-      {
-        "itemId": "Knoblauchzehe(n)",
-        "spec": "8, in Scheiben geschnitten",
-        "altIcon": "Knoblauch",
-        "altSection": "Früchte & Gemüse",
-        "stock": false
-      },
-      {
-        "itemId": "Fleischbrühe",
-        "spec": "500ml",
-        "altIcon": "Bouillon",
-        "altSection": "Zutaten & Gewürze",
-        "stock": false
-      },
-      {
-        "itemId": "Rahm",
-        "spec": "250ml",
-        "stock": false
-      },
-      {
-        "itemId": "Butter",
-        "spec": "60g",
-        "stock": false
-      },
-      {
-        "itemId": "Olivenöl",
-        "spec": "2 EL",
-        "stock": false
-      },
-      {
-        "itemId": "Schnittlauch",
-        "spec": "1 TL, gehackt",
-        "stock": false
-      },
-      {
-        "itemId": "Toastbrot",
-        "spec": "2 Scheibe/n",
-        "altIcon": "Toast",
-        "altSection": "Brot & Gebäck",
-        "stock": false
-      },
-      {
-        "itemId": "Salz und Pfeffer",
-        "altIcon": "Salz",
-        "stock": true
-      },
-      {
-        "itemId": "Wermut",
-        "spec": "(Noilly Prat)",
-        "altIcon": "Vodka",
-        "altSection": "Getränke & Tabak",
-        "stock": false
-      }
-    ],
-    "likeCount": 0,
-    "howto":[
-        "Den Toast entrinden, in gleich große Würfel schneiden und in 20 g Butter goldbraun rösten, warm stellen.",
-        "In dem heißen Olivenöl Zwiebel, Kartoffel und Knoblauchzehen angehen lassen (ohne Farbe). Mit der Brühe auffüllen und etwa 20 Min. bei kleiner Hitze köcheln lassen. Sahne zugeben und noch 10 Min. köcheln lassen. Mit den Gewürzen abschmecken.",
-        "Mit dem Mixstab pürieren und durch ein Sieb passieren. Wieder auf den Herd stellen und mit der restlichen sehr kalten Butter (in Würfeln) verrühren. Mit Noilly Prat abschmecken, mit den Toast-Croutons und Schnittlauch bestreuen."
-    ],
-    "tags": [
-      "bring_recipe_parser",
-      "Gemüse",
-      "Suppe",
-      "gebunden",
-      "gekocht",
-      "Fleisch"
-    ],
-    "enableQuantityChange": true,
-    "items": [
-        {
-          "itemId": "Kartoffel(n)",
-          "spec": "1 m.-große, in Scheiben geschnitten",
-          "altIcon": "Kartoffeln",
-          "altSection": "Früchte & Gemüse",
-          "stock": false
-        },
-        {
-          "itemId": "Zwiebel(n)",
-          "spec": "1 große, in Scheiben geschnitten",
-          "altIcon": "Zwiebeln",
-          "altSection": "Früchte & Gemüse",
-          "stock": false
-        },
-        {
-          "itemId": "Knoblauchzehe(n)",
-          "spec": "8, in Scheiben geschnitten",
-          "altIcon": "Knoblauch",
-          "altSection": "Früchte & Gemüse",
-          "stock": false
-        },
-        {
-          "itemId": "Fleischbrühe",
-          "spec": "500ml",
-          "altIcon": "Bouillon",
-          "altSection": "Zutaten & Gewürze",
-          "stock": false
-        },
-        {
-          "itemId": "Rahm",
-          "spec": "250ml",
-          "stock": false
-        },
-        {
-          "itemId": "Butter",
-          "spec": "60g",
-          "stock": false
-        },
-        {
-          "itemId": "Olivenöl",
-          "spec": "2 EL",
-          "stock": false
-        },
-        {
-          "itemId": "Schnittlauch",
-          "spec": "1 TL, gehackt",
-          "stock": false
-        },
-        {
-          "itemId": "Toastbrot",
-          "spec": "2 Scheibe/n",
-          "altIcon": "Toast",
-          "altSection": "Brot & Gebäck",
-          "stock": false
-        },
-        {
-          "itemId": "Salz und Pfeffer",
-          "altIcon": "Salz",
-          "stock": true
-        },
-        {
-          "itemId": "Wermut",
-          "spec": "(Noilly Prat)",
-          "altIcon": "Vodka",
-          "altSection": "Getränke & Tabak",
-          "stock": false
-        }
-      ]
-  }
+  "name":"Kartoffelauflauf",
+  "author":"x3n0r",
+  "imageUrl":"",
+  "category":"Hauptgericht",
+  "serves":5,
+  "preptime":20,
+  "cooktime":20,
+  "ingredients": [
+      "500g Faschiertes",
+      "1 Sauerrahm",
+      "1 Crème fraîche",
+      "2 Eier",
+      "2 kleine Zwiebeln",
+      "1kg Kartoffeln"
+  ],
+  "howto":[
+      "Kartoffeln schälen, in Spalten schneiden und ca. 15 Minuten kochen.",
+      "Zwiebeln schneiden und anbraten.",
+      "Faschiertes zu den Zwiebeln hinzugeben und mit Salz, Pfeffer und ausreichend Ketchup würzen.",
+      "Backrohr auf Umluft 180° vorheizen.",
+      "Saurrahm mit 2 Eiern vermischen. Salz und Pfeffer hinzugeben.",
+      "Kartoffeln, Faschiertes und Sauerrahm-Ei-Gemisch in einer Auflaufform schichten Crème fraîche darüber verteilen und mit geriebenen Käse bestreuen.",
+      "Auflaufform für 15-20 Minuten ins Backrohr geben."
+  ]
+}
