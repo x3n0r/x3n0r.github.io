@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recipe.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@type": "Recipe",
+                "name": "Pustzaschnitzel mit Bratkartoffeln",
+                "author": "x3n0r",
+                "cookTime": "PT20M",
+                "prepTime": "PT20M",
+                "description": "",
+                "image": "",
+                "recipeIngredient": [
+                    "800g Hühnerbrust",
+                    "3 Paprika",
+                    "2 große Zwiebel",
+                    "2EL Paprikapulver",
+                    "2EL Tomatenmark",
+                    "2 Gemüsesuppenwürfel",
+                    "250ml Wasser",
+                    "500g Kartoffeln",
+                    "1 Petersilie"
+                ],
+                "recipeInstructions":[
+                    "Hühnerbrust in Schnitzel schneiden.",
+                    "Kartoffeln schälen und in Spalten schneiden und kochen.",
+                    "Paprika und Zwiebeln in Streifen schneiden. Danach mit etwas Wasser 5-10 Minuten dünsten.",
+                    "200ml Wasser, Paprikapulver, Tomatenmark und Gemüsesuppenwürfel hinzufügen und 10-15 Minuten dünsten.",
+                    "Währenddessen Fleischanbraten.",
+                    "Petersilie und Butter zu den fertigen Kartoffeln hinzugeben.",
+                ],
+                "recipeYield": 5,
+                "baseQuantity": 5,
+                "enableQuantityChange": true
+            }
+        </script>
+        <script src="loadJsonLd.js"></script>
+        <script async="async" src="//platform.getbring.com/widgets/import.js"></script>
+    </head>
+    <body>
+        <div itemtype="http://schema.org/Recipe">
+
+            <h1 id="name">[name]</h1>
+            <div><span>By </span><span id="author">[author]</span></div>   
+            <img id="imageUrl"></img>
+            
+            <div><span>Serves: </span><span id="serves">[serves]</span><span> Persons</span></div>
+        
+            <div><span>Preperation time: </span><span id="preptime">[preptime]</span></div>
+        
+            <div><span>Cooking time: </span><span id="cooktime">[cooktime]</span></div>
+                                
+            <div>
+                <h3>Zutaten:</h3>
+                <ul id="ingredients"></ul>
+            </div>                
+            <div>
+                <h3>Anleitung:</h3>
+                <ul id="howto" style="list-style-type: decimal;"></ul>
+            </div>      
+        </div>
+        
+        
+        <div data-bring-import="" style="display:none"></div>
+        
+        <div class="spacer"></div>
+        
+        <div><a class="button-dark" href="../recipeindex.html">Zurück zur Auswahl</a></div>
+    </body>
+</html>
+
