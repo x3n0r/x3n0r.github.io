@@ -1,14 +1,14 @@
 {
     "name": "Knoblauchcremesuppe",
     "author": "Chefkoch",
-    "//tagline": "Gesamtzeit ca. 15 Minuten",
-    "//linkOutUrl": "https://www.chefkoch.de/rezepte/695531172069581/Knoblauchcremesuppe.html",
+    "tagline": "Gesamtzeit ca. 25 Minuten",
+    "linkOutUrl": "https://www.chefkoch.de/rezepte/695531172069581/Knoblauchcremesuppe.html",
     "imageUrl": "https://img.chefkoch-cdn.de/rezepte/695531172069581/bilder/1308821/crop-960x720/knoblauchcremesuppe.jpg",
     "imageWidth": 960,
     "imageHeight": 720,
     "yield": "4",
     "baseQuantity": 4,
-    "time": "PT15M",
+    "time": "PT25M",
     "ingredients": [
       {
         "itemId": "Kartoffel(n)",
@@ -78,6 +78,7 @@
         "stock": false
       }
     ],
+    "likeCount": 0,
     "howto":[
         "Den Toast entrinden, in gleich große Würfel schneiden und in 20 g Butter goldbraun rösten, warm stellen.",
         "In dem heißen Olivenöl Zwiebel, Kartoffel und Knoblauchzehen angehen lassen (ohne Farbe). Mit der Brühe auffüllen und etwa 20 Min. bei kleiner Hitze köcheln lassen. Sahne zugeben und noch 10 Min. köcheln lassen. Mit den Gewürzen abschmecken.",
