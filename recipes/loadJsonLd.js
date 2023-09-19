@@ -13,7 +13,11 @@ $(document).ready(function(){
 
     var ingredients_data='';
     $.each(jsonld.recipeIngredient,function(key,value){
-        ingredients_data +='<li itemprop="ingredients">'+value+'</li>';
+        if ( typeof(value) === 'string' ) {
+            ingredients_data +='<li itemprop="ingredients">'+value+'</li>';
+        } else {
+            ingredients_data +='<li itemprop="ingredients">'+value.itemId+'</li>';
+        }
     });
     $('#ingredients').append(ingredients_data)
 
