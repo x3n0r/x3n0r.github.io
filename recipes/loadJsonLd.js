@@ -16,7 +16,7 @@ $(document).ready(function(){
         if ( typeof(value) === 'string' ) {
             ingredients_data +='<li itemprop="ingredients">'+value+'</li>';
         } else {
-            ingredients_data +='<li itemprop="ingredients">'+value.itemId+'</li>';
+            ingredients_data +='<li itemprop="ingredients">'+value.spec + ' ' +value.itemId+'</li>';
         }
     });
     $('#ingredients').append(ingredients_data)
